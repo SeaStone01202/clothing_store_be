@@ -1,0 +1,11 @@
+package com.java6.asm.clothing_store.dto.request;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class RefreshTokenRequest {
+
+    private String refreshToken;
+}
