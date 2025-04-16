@@ -21,6 +21,8 @@ spring:
 
   data:
     redis:
+      repositories:
+        enabled: false
       url: ${REDIS_URL}
       host: ${REDIS_HOST}
       port: ${REDIS_PORT}
