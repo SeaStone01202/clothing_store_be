@@ -10,8 +10,7 @@ public class DotenvConfig {
     @Bean
     public Dotenv dotenv() {
         return Dotenv.configure()
-                .filename("key.env")
-                .directory("./")
-                .load();
+            .ignoreIfMissing() // <-- dòng này giúp không crash nếu file không tồn tại
+            .load();
     }
 }
